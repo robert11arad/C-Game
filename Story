@@ -1,0 +1,9 @@
+//Clearings
+
+//Swamp(Thorns)
+
+//Mountain
+
+//Dungeon
+
+//Cloud-land
