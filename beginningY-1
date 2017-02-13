@@ -1,0 +1,152 @@
+#include <iostream>
+#include <string>
+#include <stdlib.h>
+#include <algorithm>
+using namespace std;
+
+bool PLAYING; //Used to repeat story as long as player is playing
+int STORY_PROGRESSION; //variable to track in which story you are
+string CHARACTER_NAME = "NONE"; //variable where the name of the character is stored
+string OPTION;
+int main()
+ {
+    STORY_PROGRESSION = 0; //TEST : to start from the begining;
+
+    PLAYING = true;
+    while (CHARACTER_NAME == "NONE")
+        {
+            cout << "And what may your name be ?" << endl << endl;
+
+            cout <<"My name is: " ;
+            getline(cin,CHARACTER_NAME);
+
+
+            
+        }
+
+    while(PLAYING) //Repeat story while the player is playing
+    {
+
+        switch(STORY_PROGRESSION)
+        {
+
+            case 0:
+                cout << endl << endl;
+
+                cout << CHARACTER_NAME << " you just woke up in a dark place. You do not have any idea where you are. " << endl;
+                cout << "You must find your way out alive. On your journey, you may run into obstacles you " << endl;
+                cout << "have never imagined before. Choose a direction to proceed further." << endl << endl;
+
+
+                getline(cin,OPTION);
+
+                transform(OPTION.begin(),OPTION.end(),OPTION.begin(),::toupper);
+                if (OPTION == "GO RIGHT" || OPTION == "GO EAST")
+                {
+                    STORY_PROGRESSION = 11;
+                }
+                else if (OPTION == "GO LEFT" || OPTION == "GO WEST")
+                {
+                    STORY_PROGRESSION = 12;
+                }
+                else
+                {
+                    cout << endl << endl;
+                    cout << "You can not " << OPTION << endl;
+                }
+
+
+                break;
+
+            case 11:
+                cout << endl;
+                cout << "There is a shed in the middle of nowhere. It seems like someone could be " << endl;
+                cout << "living there but it is dark and scary. What do you want to do?" <<endl;
+
+                getline(cin,OPTION);
+
+                transform(OPTION.begin(),OPTION.end(),OPTION.begin(),::toupper);
+                if (OPTION == "GO RIGHT FROM THE SHED" || OPTION == "GO EAST")
+                {
+                    cout << "There is a dungeon. You may not get alive from there. Think wisely what to do." << endl;
+                    STORY_PROGRESSION = 21;
+                }
+                else if (OPTION == "GO LEFT" || OPTION == "GO WEST")
+                {
+                    cout << "There is a clearing leading to the high, cold mountains which are hiding unexpected secrets." << endl;
+                    STORY_PROGRESSION = 22;
+                }
+                else
+                {
+                    cout << endl << endl;
+                    cout << "You can not " << OPTION << endl;
+                }
+
+
+                break;
+                
+                
+            case 12:
+                cout << endl;
+                cout << "There is a massive tree nearby and nothing else in radius of 10 miles." << endl;
+                cout << "If you chose to run to the right you will reach a swamp with ruins, and if you " << endl;
+                cout << "chose to fly left you will appear in the cloudland." << endl;
+                
+                getline(cin,OPTION);
+
+                transform(OPTION.begin(),OPTION.end(),OPTION.begin(),::toupper);
+                if (OPTION == "FLY LEFT" || OPTION == "FLY TO LEFT" || OPTION == "FLY TO WEST" || OPTION == "FLY WEST")
+                {
+                    cout << "You are now in the cloudland…." << endl; //CLOUDLAND STORY
+                    STORY_PROGRESSION = 31;
+                }
+                else if (OPTION == "RUN TO RIGHT" || OPTION == "RUN TO EAST")
+                {
+                    cout << "That exhausted you but you reached successfully the swamp…" << endl; //SWAMP STORY
+                    STORY_PROGRESSION = 32;
+                }
+        
+                
+                break;
+                
+            case 21:
+                // DUNGEON STORY
+                break;
+                
+            case 22:
+                // MOUNTAIN STORY
+                break;
+                
+            case 22:
+                // MOUNTAIN STORY
+                break;
+                
+            case 31:
+                //CLOUDLAND STORY
+                break;
+                
+            case 32:
+                //SWAMP STORY
+                break;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ return 0;
+ }
