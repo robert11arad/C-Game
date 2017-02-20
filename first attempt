@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string command;
+
+int main()
+{
+	//player health
+	float maxHealth;
+	float currentHealth;
+	
+	//monsters
+	float monsterMaxHealth;
+	float enemyCurrentHealth;
+
+	cout << "\nYou wake in a hole in the middle of no where\n" << endl;
+	getline (cin, command);
+    if (command == "climb out of hole")
+	{
+		cout << "\nYou are in a clearing with lots of trees around you, there is a gravel path to the east and west of you\n" << endl;
+    }
+    getline (cin, command);    
+    //need to make it so you can go back
+    if (command == "go east")
+    {
+        cout << "\nYou enter another clearing with heavy grass and notice a abondoned shed with sign on it Gardeners dream\n" << endl;
+    }
