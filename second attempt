@@ -1,0 +1,55 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string command;
+
+int main()
+{
+	//player health
+	float maxHealth;
+	float currentHealth;
+	
+	//monsters
+	float monsterMaxHealth;
+	float enemyCurrentHealth;
+
+	cout << "\nYou wake in a hole in the middle of no where\n" << endl;
+	getline (cin, command);
+    if (command == "climb out of hole")
+	{
+		cout << "\nYou are in a clearing with lots of trees around you, there is a gravel path to the east and west of you\n" << endl;
+    }
+    getline (cin, command);    
+    //need to make it so you can go back
+    if (command == "go east")
+    {
+        cout << "\nYou enter another clearing with heavy grass and notice a abondoned shed with sign on it Gardeners dream\n" << endl;
+    }
+    getline (cin, command);
+    if (command == "go west")
+    {
+        cout << "\nYou notice another clearing with a large tree with something in it, to the north is a swamp\n" << endl;
+    }
+    //new bit
+    getline (cin, command);
+    if (command == "open shed")
+    {
+        cout << "\nThe shed contains a swordon teh wall with a tri force logo and a plush yoshi on the ground\n" << endl;
+    }
+    getline (cin, command);
+    if (command == "climb large tree")
+    {
+        cout << "\nYou notice a rope ladder leading even further up teh tree\n" << endl;
+    }
+    getline (cin, command);   
+    if (command == "go north")
+    {
+        cout << "\nYou enter a swamp which is covered with death and destruction, there are ruins of an old temple and a small thorny path to the east\n" << endl;
+    }
+    //new bit
+    getline (cin, command);
+    if (command == "get sword")
+    {
+        cout << "\nYou pick up the sword\n" << endl;
+    }
