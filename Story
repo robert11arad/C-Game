@@ -1,4 +1,30 @@
 //Clearings
+Start
+You (NAME) just woke up in a dark place. You do not have any idea where you are. You must find your way out alive. On your journey, you may run into obstacles you have never imagined before. Choose a direction to proceed further.
+1.	GO RIGHT/ GO EAST: 
+1.1.	“There is a shed in the middle of nowhere. It seems like someone could be living there but it is dark and scary. What do you want to do?”
+
+-	GO INTO THE SHED/ GO IN SHED: “You cannot go into the shed”
+-	GO RIGHT FROM THE SHED/ GO EAST: “There is a dungeon. You may not get alive from there. Think wisely what to do.”
+-	GO LEFT FROM THE SHED/ GO WEST: “There is a clearing leading to the high, cold mountains which are hiding unexpected secrets.” 
+
+
+2.	GO LEFT/ GO WEST:
+2.1.	“There is a massive tree nearby and nothing else in radius of 10 miles. If you chose to run to the right you will reach a swamp with ruins, and if you chose to fly left you will appear in the cloudland.”
+-	FLY (TO) LEFT/ FLY (TO) WEST: “You are now in the cloudland….”
+-	RUN (TO) RIGHT/ RUN (TO) EAST: “That exhausted you but you reached successfully the swamp…”
+
+
+From cloud land: “There is nothing here. You have to proceed further so that you can finish the game.”
+1.	PROCEED FURTHER/ PROCEED: “…”
+
+“There is huge tree with a house on it. In the house are living fairies. They have a pond in which you have to swim if you want the fairies to let you pass.”
+
+1.	CLIMB TREE: “You climbed the tree you need to enter the fairies house.”
+-	ENTER HOUSE: “You are in the house but the fairies want to play a game with you before they let you pass. You can choose between paper, rock and scissors or roll a dice.” 
+Fairies: “You are in our territory. We control the paths to this land. We will only let you pass if you play a game with us. We can play paper, rock and scissors or roll a dice.”
+
+
 
 //Swamp(Thorns)
     Swamp entrance
