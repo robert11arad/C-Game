@@ -1,6 +1,61 @@
 //Clearings
 
 //Swamp(Thorns)
+    Swamp entrance
+
+As you enter the muddy swamp you notice that it is very large, it seems going around a mountain of some sorts and it stretches further 
+to the North and to the West, more than you would’ve hoped it to. About 100 meters further from the entrance there is a Temple in 
+ruins, it seems very old, like no one has entered it for thousands of years, you’re not sure if you should go in there, maybe you’re 
+disturbing a sacred place. About  50 meters to the right of the Temple there is a bush of thorny, green vines that have grown on them
+some beautiful pink flowers, they’re like nothing you’ve ever seen before, you feel like you have to hold at least one in your hands.
+
+-Investigate ruined Temple. <Ruined Temple>
+-Investigate Flowers. <Thorny vines>
+-Go further north through the muddy swamp. <North-East swamp>
+-Go further west through the muddy swamp. <South-West swamp>
+
+
+    Ruined Temple
+
+	As you make the first step inside the temple you feel a chill go down your spine, you can hear pebbles falling down from the giant 
+  roof made of stone, you smell the old dust that’s been gathering there for a very long time. The walls have a lot of cracks in them 
+  and the light passes through barely so you can see where you’re stepping, the only thing you know so far is that you’re in a great 
+  hall that seems made for giants, and the only thing you can see clearly is the light coming from the door you left behind you slowly 
+  fading away. You got to a giant opening where in the middle is a giant statue and a lot of fallen pillars, you’re wondering how is 
+  it that the whole thing didn’t collapse already with so few pillars sustaining the giant roof. As you look around the statue you 
+  observe some kind of lines and circles on the ground, the lines are connecting the circles to the statue, and inside the circles 
+  are some kind of golden plates.
+
+-Investigate Statue. <Ruined Temple/ Statue>
+-Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
+-Investigate the golden plates, hopefully they are indeed made of gold and you can get some money. <Ruined Temple/ Golden Plates>
+-Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
+<Ruined Temple/ Opening>
+
+
+	  Ruined Temple – Statue
+
+	As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little strange since 
+  you’re wearing clothes and it feels like the sun is warming you everywhere, and I mean everywhere, apart from the fact that you are 
+  in a dark room, inside a temple, made of stone and there is no sunlight… Even though you feel like you’re going crazy you make it to 
+  the statue and put your hand on it’s pedestal, as your hand touches the pedestal you feel bombarded with sunlight,  and the grass 
+  tickling your bare feet, you find yourself naked in that strange place, with your hand on the bark of a tree. You close your eyes and 
+  take your hand off of the tree, as you open them you notice that you are back in the temple, but now there is a giant ball of fire 
+  right above the statue’s head that lights the whole room. You take some steps back and look at the statue, which seems to be praising 
+  the sun, standing tall on two feet, with it’s both arms raised at a 45 degree angle of it’s head, with a giant ball of fire between 
+  it’s arms and right above it’s head.
+
+-Touch the statue again. <Ruined Temple/ Solaire’s Statue>
+-Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
+-Investigate the golden plates, hopefully they are indeed made of gold and you can get some money. <Ruined Temple/ Golden Plates>
+-Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
+<Ruined Temple/ Opening>
+
+
+	  Ruined Temple – Solaire’s Statue
+
+	This time when you approach the pedestal you don’t feel that warming light all over your body, just a little coming from the giant 
+  ball of fire above, but nevertheless, you put your hand on it and find yourself back to that field.
 
 //Mountain
 
