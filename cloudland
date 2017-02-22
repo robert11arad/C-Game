@@ -2,13 +2,14 @@
 #include <vector>
 using namespace std;
 
-int rooftop();
-int shadow();
+int rooftop(); // Function Declaration
+int shadow(); // Function Declaration
 
-vector<string> objects;
+vector<string> objects; // Vector Declaration named objects
 
 bool linear_search( vector<string> sequence, string value )
 {
+  // Linear Search Funtion to identify a string inside a given sequence
   for (std::size_t i = 0; i != sequence.size(); ++i)
   {
     if (sequence.at(i) == value)
@@ -19,30 +20,33 @@ bool linear_search( vector<string> sequence, string value )
   return false;
 }
 
+
+// Story Code
 int out(string value)
 {
     if(value == "dead")
     {
+		// User dies
         cout << "You Died" << endl;
     }
 
     else if(value == "tranport")
     {
-        /* Gets transported */
+        // Gets transported 
         cout << "You got teleported to ..." << endl;
         return 0;
     }
 
     else if(value == "leaveR")
     {
-        /* Leaves cloudland */
+        // Leaves cloudland 
         cout << "You leave cloudland to ... r" << endl;
         return 0;
     }
 
     else if(value == "leaveH")
     {
-        /* Leaves cloudland */
+        // Leaves cloudland 
         cout << "You leave cloudland to ... h" << endl;
         return 1;
     }
@@ -67,8 +71,8 @@ int house2()
                 "can’t read it. You ask the old man what was written on "
                 "it, he says he doesn’t know."<< endl;
 
-    string option;
-    getline(cin,option);
+    string option; // Defines option value type
+    getline(cin,option); // Gets user input
 
     if(option == "sleep")
     {
@@ -121,8 +125,8 @@ int house()
     }
 
 
-    string option;
-    getline(cin,option);
+    string option; // Defines option value type
+    getline(cin,option); // Gets user input
 
     if(option == "wait")
     {
@@ -159,8 +163,8 @@ int shadow()
 {
     cout << "As you get closer to the shadow a horrifying noise gets louder, "
             "the shadow start moving." << endl;
-    string option;
-    getline(cin,option);
+	string option; // Defines option value type
+	getline(cin, option); // Gets user input
 
     if (option == "fight")
     {
@@ -184,8 +188,8 @@ int rooftop()
 {
     cout << "You reach the rooftop and see a ladder, the human "
                 "shadow east and the thunderstorm west." << endl;
-    string option;
-    getline(cin,option);
+    string option; // Defines option value type
+	getline(cin, option); // Gets user input
 
     if(option == "go east")
     {
@@ -217,6 +221,7 @@ int rooftop()
 
 int sun ()
 {
+	// Identifies if a object is inside the objects vector
     if(linear_search(objects, "golden sword") == true)
     {
         cout << "As you reach the sun ray you see a "
@@ -231,8 +236,8 @@ int sun ()
     }
 
 
-    string option;
-    getline(cin,option);
+    string option; // Defines option value type
+	getline(cin, option); // Gets user input
     if (option == "go north")
     {
         return rooftop();
@@ -270,8 +275,8 @@ int main ()
     cout << "You fall on a cloud, look around and see a sun ray north, "
 	        "a hole in the clouds south and a human shadow east." << endl;
 
-    string option;
-    getline(cin,option);
+    string option; // Defines option value type
+	getline(cin, option); // Gets user input
 
     if (option == "go north")
     {
