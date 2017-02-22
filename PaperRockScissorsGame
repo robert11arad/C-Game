@@ -1,0 +1,62 @@
+// paper, rock, scissors game - code
+
+#include <iostream>
+#include <string>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+	int PlayerScore = 0;
+	int FairiesScore = 0;
+	string PlayerAnswer;
+	string FairiesAnswer;
+	string Option[3] = { "paper","rock","scissors" };
+	while (PlayerScore < 3 && FairiesScore < 3)
+	{
+		cout << endl;
+		cin >> PlayerAnswer;
+		srand(time(NULL));
+		FairiesAnswer = Option[rand() % 3];
+		cout << endl << FairiesAnswer << endl;
+
+		if (PlayerAnswer != FairiesAnswer)
+		{
+			if ((PlayerAnswer == "paper" && FairiesAnswer == "rock") || (PlayerAnswer == "scissors" && FairiesAnswer == "paper")
+				|| (PlayerAnswer == "rock" && FairiesAnswer == "scissors"))
+			{
+				PlayerScore++;
+				cout << endl << "You won this round" << endl;
+			}
+			else if ((FairiesAnswer == "paper" && PlayerAnswer == "rock") || (FairiesAnswer == "scissors" && PlayerAnswer == "paper")
+				|| (FairiesAnswer == "rock" && PlayerAnswer == "scissors"))
+			{
+				FairiesScore++;
+				cout << endl << "Fairies won this round" << endl;
+			}
+
+
+		}
+		else
+		{
+			cout << endl << "No one wins" << endl;
+		}
+
+
+	}
+
+	if (PlayerScore > FairiesScore)
+	{
+		cout << "YOU WON THE GAME" << endl;
+	}
+	else
+	{
+		cout << "FAIRIES WON THE GAME" << endl;
+	}
+
+	cin >> PlayerAnswer;
+
+	return 0;
+}
