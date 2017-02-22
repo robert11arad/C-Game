@@ -88,3 +88,31 @@ some beautiful pink flowers, they’re like nothing you’ve ever seen before, y
 //Dungeon
 
 //Cloud-land
+
+[S]You fall on a cloud, look around and see a sun ray north, a hole in the clouds south and a human shadow east.
+
+[OA1]-Go North- As you reach the sun ray you see a golden sword, you now see the human shadow east, you see a rooftop north and a thunderstorm west.
+	[OB1]-Go North- You reach the rooftop and see a ladder, the human shadow east and the thunderstorm west.
+		[OE1]-Go East- As you move towards the shadow it starts moving you get ready to fight with your golden sword, it gets close enough and you see a horrendous creature you fight and as you kill it you get transported out of the cloudland.
+		[OE2]-Use Ladder- You leave cloudland.
+		[OE3]-Go West- As you head towards the thunderstorm you get pulled by a wormhole that takes you to a different place.
+	[OB2]- Go East – As you get closer to the shadow a horrifying noise gets louder, the shadow start moving.
+		[OF1]- Fight – You fight the creature and defeat it with your golden sword.
+		[OF2]-  Run - You start running and only stop when you hit a rooftop. You see a ladder and a thunderstorm west.
+			[OI1]- Use Ladder – You leave cloudland.
+			[OI2]- Go West - As you head towards the thunderstorm you get pulled by a wormhole that takes you to a different place.			
+	[OB3]- Go West- As you head towards the thunderstorm you get pulled by a wormhole that takes you to a different place.
+[OA2]-Go East- As you get closer to the shadow a horrifying noise gets louder, the shadow start moving.
+	[OC1]-- Fight – You get ready to fight but the creature is too strong and you die. 
+	[OC2]-  Run - You start running and only stop whe you hit a rooftop. You see a ladder and a thunderstorm west.
+		[OG1]-Use Ladder- You leave cloudland.
+		[OG2]-Go West- As you head towards the thunderstorm you get pulled by a wormhole that takes you to a different place.
+
+[OA3]- Go South – As you get closer to the hole the wind gets stronger and you can’t move back anymore. The wind starts pulling you towards the hole, you see a hut and take cover on it. As you enter the hut you find and old man, he says he’s been there for decades waiting for the windstorm end.
+	[OD1]- Wait – As you seat on a chair you notice text on a wall, you can’t real it clearly, you can understand “The … won’t stop … human d …”. You ask the old man what was written on it, he says he doesn’t know.
+		[OH1]-Sleep- As you fall asleep the old man attacks you and kills you.
+		[OH2]-Attack the old man- You attack the old man, after killing him the wind stops, you go out and head towards the hole when you reach it you see a ladder and leave the cloudland.
+		[OH3]-Threaten the old man-You demand an answer, the old man tries to stab you but you are stronger and fight back, after killing him the wind stops, you go out and head towards the hole when you reach it you see a ladder and leave the cloudland.
+	[OD2]- Attack the old man- You attack the old man, after killing him the wind stops, you go out and head towards the hole when you reach it you see a ladder and leave the cloudland.
+	[OD3]- Go out- As you leave the hut you get pulled towards the hole and fall.
+
