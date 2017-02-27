@@ -7,6 +7,7 @@ int shadow(); // Function Declaration
 
 vector<string> objects; // Vector Declaration named objects
 
+// The following function identifies a string in a given vector
 bool linear_search( vector<string> sequence, string value )
 {
   // Linear Search Funtion to identify a string inside a given sequence
