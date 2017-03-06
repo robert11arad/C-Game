@@ -29,11 +29,12 @@ Fairies: “You are in our territory. We control the paths to this land. We will
 //Swamp(Thorns)
     	Swamp entrance
 
-	As you enter the muddy swamp you notice that it is very large, it seems going around a mountain of some sorts and it stretches further 
-to the North and to the West, more than you would’ve hoped it to. About 100 meters further from the entrance there is a Temple in 
-ruins, it seems very old, like no one has entered it for thousands of years, you’re not sure if you should go in there, maybe you’re 
-disturbing a sacred place. About  50 meters to the right of the Temple there is a bush of thorny, green vines that have grown on them
-some beautiful pink flowers, they’re like nothing you’ve ever seen before, you feel like you have to hold at least one in your hands.
+	As you enter the muddy swamp you notice that it is very large, it seems going around a mountain of some sorts and it 
+stretches further to the North and to the West, more than you would’ve hoped it to. About 100 meters further from the entrance 
+there is a Temple in ruins, it seems very old, like no one has entered it for thousands of years, you’re not sure if you should 
+go in there, maybe you’re disturbing a sacred place. About  50 meters to the right of the Temple there is a bush of thorny, green 
+vines that have grown on them some beautiful pink flowers, they’re like nothing you’ve ever seen before, you feel like you have 
+to hold at least one in your hands.
 
 -Investigate ruined Temple. <Ruined Temple>
 -Investigate Flowers. <Thorny vines>
@@ -43,14 +44,14 @@ some beautiful pink flowers, they’re like nothing you’ve ever seen before, y
 
     	Ruined Temple
 
-	As you make the first step inside the temple you feel a chill go down your spine, you can hear pebbles falling down from the giant 
-  roof made of stone, you smell the old dust that’s been gathering there for a very long time. The walls have a lot of cracks in them 
-  and the light passes through barely so you can see where you’re stepping, the only thing you know so far is that you’re in a great 
-  hall that seems made for giants, and the only thing you can see clearly is the light coming from the door you left behind you slowly 
-  fading away. You got to a giant opening where in the middle is a giant statue and a lot of fallen pillars, you’re wondering how is 
-  it that the whole thing didn’t collapse already with so few pillars sustaining the giant roof. As you look around the statue you 
-  observe some kind of lines and circles on the ground, the lines are connecting the circles to the statue, and inside the circles 
-  are some kind of golden plates.
+	As you make the first step inside the temple you feel a chill go down your spine, you can hear pebbles falling down from 
+the giant roof made of stone, you smell the old dust that’s been gathering there for a very long time. The walls have a lot of 
+cracks in them and the light passes through barely so you can see where you’re stepping, the only thing you know so far is that 
+you’re in a great hall that seems made for giants, and the only thing you can see clearly is the light coming from the door you 
+left behind you slowly fading away. You got to a giant opening where in the middle is a giant statue and a lot of fallen pillars, 
+you’re wondering how is it that the whole thing didn’t collapse already with so few pillars sustaining the giant roof. As you 
+look around the statue you observe some kind of lines and circles on the ground, the lines are connecting the circles to the 
+statue, and inside the circles are some kind of golden plates.
 
 -Investigate Statue. <Ruined Temple/ Statue>
 -Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
@@ -61,15 +62,15 @@ some beautiful pink flowers, they’re like nothing you’ve ever seen before, y
 
 	Ruined Temple – Statue
 
-	As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little strange since 
-  you’re wearing clothes and it feels like the sun is warming you everywhere, and I mean everywhere, apart from the fact that you are 
-  in a dark room, inside a temple, made of stone and there is no sunlight… Even though you feel like you’re going crazy you make it to 
-  the statue and put your hand on it’s pedestal, as your hand touches the pedestal you feel bombarded with sunlight,  and the grass 
-  tickling your bare feet, you find yourself naked in that strange place, with your hand on the bark of a tree. You close your eyes and 
-  take your hand off of the tree, as you open them you notice that you are back in the temple, but now there is a giant ball of fire 
-  right above the statue’s head that lights the whole room. You take some steps back and look at the statue, which seems to be praising 
-  the sun, standing tall on two feet, with it’s both arms raised at a 45 degree angle of it’s head, with a giant ball of fire between 
-  it’s arms, right above it’s head.
+	As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little 
+strange since you’re wearing clothes and it feels like the sun is warming you everywhere, and I mean everywhere, apart from the 
+fact that you are in a dark room, inside a temple, made of stone and there is no sunlight… Even though you feel like you’re going 
+crazy you make it to the statue and put your hand on it’s pedestal, as your hand touches the pedestal you feel bombarded with 
+sunlight,  and the grass tickling your bare feet, you find yourself naked in that strange place, with your hand on the bark of a 
+tree. You close your eyes and take your hand off of the tree, as you open them you notice that you are back in the temple, but 
+now there is a giant ball of fire right above the statue’s head that lights the whole room. You take some steps back and look at 
+the statue, which seems to be praising the sun, standing tall on two feet, with it’s both arms raised at a 45 degree angle of 
+it’s head, with a giant ball of fire between it’s arms, right above it’s head.
 
 -Touch the statue again. <Ruined Temple/ Solaire’s Statue>
 -Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
@@ -80,12 +81,12 @@ some beautiful pink flowers, they’re like nothing you’ve ever seen before, y
 
 	Ruined Temple – Solaire’s Statue
 
-	This time when you approach the pedestal you don’t feel that warming light all over your body, just a little coming from the giant 
-  ball of fire above, but nevertheless, you put your hand on it and find yourself back to that field.
+	This time when you approach the pedestal you don’t feel that warming light all over your body, just a little coming from 
+the giant ball of fire above, but nevertheless, you put your hand on it and find yourself back to that field.
   
   	Ruined Temple - Drawings(Before Plate)
 	
-	You get down and put your face against the floor, looking how the line you have your face on stretches like a road,
+	You get down and put your face against the floor, looking how the line, that you have your face on, stretches like a road,
 connecting the plate behind you to the statue that's right in front of you. Besides the strange pattern the drawings have,
 there's nothing special to them, it looks like some yellow paint with a lot of layers of dust ontop.
 
@@ -95,11 +96,11 @@ there's nothing special to them, it looks like some yellow paint with a lot of l
 the golden line, the way it glows makes it seem like it's alive, like the fluctuations of it's glow is it's breathing, but 
 you lose all this train of thoughts the moment you lay your hand on the line because it feels like you've just touched the sun, 
 and no, i do not mean it as some profound and divine experience, i mean it as in you've just burned your fingers in such a manner 
-that you can see the bones surounded by your black, burnt flesh. You quickly withdraw your hand and get up, you're bat shit scared 
-you just lost three of your fingers and it hurts like hell, what the hell is wrong with whoever made this temple you wonder, why 
-the obsesion with fire and gold? why couldn't they just put their valuables in a nice chest in a dark cave like a normal person? 
-why all these puzzles, what do the developers of the game think you are, a 4 years old with too much time in your hands?...
-(Player takes damage about 5%)
+that you can see the bones surounded by your black, burnt flesh. You quickly withdraw your hand and get up, you're bat shit 
+scared you just lost three of your fingers and it hurts like hell, what the hell is wrong with whoever made this temple you 
+wonder, why the obsesion with fire and gold? why couldn't they just put their valuables in a nice chest in a dark cave like a 
+normal person? Why all these puzzles, what do the developers of the game think you are, a 4 years old with too much time in your 
+hands?...(Player takes damage about 5%)
 
 	Ruined Temple - Golden Plates(Empty)
 	
@@ -109,9 +110,17 @@ front of it about 5 cm to the left, and the other one is slightly further away f
 seem to make some kind of pattern, the one behind being connected to the statue directly and the one right in front of it too, 
 only the one that's further away is connected to the next golden plate instead of the statue directly. As you inspect the 
 closest golden plate to you, you see something engraved right in the middle of it, something is written there: 𐌔𐌄𐌂𐌏𐌍𐌃𐌀 𐌔𐌕𐌄𐌋𐌋𐌀 
-𐌃𐌄. You go to check the other plates as well to see if there's anything written on them as well, and the moment you clean the 
-dust away from the next plate you see there is something written on it too: 𐌐𐌓𐌉𐌌𐌀 𐌔𐌕𐌄𐌋𐌋𐌀 𐌃𐌄 , last you check the plate behind 
-the statue, and on this one it's engarved: XLI𐌀𐌓𐌉. What could it mean you wonder, maybe it means something...
+𐌃𐌄 𐌖𐌉𐌍𐌂𐌖𐌋𐌏. You go to check the other plates as well to see if there's anything written on them as well, and the moment you 
+clean the dust away from the next plate you see there is something written on it too: 𐌐𐌓𐌉𐌌𐌀 𐌔𐌕𐌄𐌋𐌋𐌀 𐌃𐌄 𐌖𐌉𐌍𐌂𐌖𐌋𐌏, last you check 
+the plate behind the statue, and on this one it's engarved: 𐌗𐌋𐌉𐌀𐌓𐌉. What could it mean you wonder, maybe it means something...
+
+	Ruined Temple - Golden Plates(Sacrifice)
+	
+	.
+	
+	Ruined Temple - "Around"
+	
+	
 
 //Mountain
 
