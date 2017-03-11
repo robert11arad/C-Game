@@ -40,6 +40,7 @@ to hold at least one in your hands.
 -Investigate Flowers. <Thorny vines>
 -Go further north through the muddy swamp. <North-East swamp>
 -Go further west through the muddy swamp. <South-West swamp>
+-Go south. <West Clearing>
 
 
     	Ruined Temple
@@ -57,7 +58,8 @@ statue, and inside the circles are some kind of golden plates.
 -Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
 -Investigate the golden plates, hopefully they are indeed made of gold and you can get some money. <Ruined Temple/ Golden Plates>
 -Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
-<Ruined Temple/ Opening>
+<Ruined Temple/ "Around">
+-Leave temple. <Swamp entrance- After Temple>
 
 
 	Ruined Temple – Statue
@@ -76,19 +78,34 @@ it’s head, with a giant ball of fire between it’s arms, right above it’s h
 -Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
 -Investigate the golden plates, hopefully they are indeed made of gold and you can get some money. <Ruined Temple/ Golden Plates>
 -Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
-<Ruined Temple/ Opening>
+<Ruined Temple/ "Around">
+-Leave temple. <Swamp entrance- After Temple>
 
 
 	Ruined Temple – Solaire’s Statue
 
 	This time when you approach the pedestal you don’t feel that warming light all over your body, just a little coming from 
 the giant ball of fire above, but nevertheless, you put your hand on it and find yourself back to that field.
-  
+
+-Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
+-Investigate the golden plates, hopefully they are indeed made of gold and you can get some money. <Ruined Temple/ Golden Plates>
+-Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
+<Ruined Temple/ "Around">
+-Leave temple. <Swamp entrance- After Temple>
+
+
   	Ruined Temple - Drawings(Before Plate)
 	
 	You get down and put your face against the floor, looking how the line, that you have your face on, stretches like a road,
 connecting the plate behind you to the statue that's right in front of you. Besides the strange pattern the drawings have,
 there's nothing special to them, it looks like some yellow paint with a lot of layers of dust ontop.
+
+-Investigate Statue. <Ruined Temple/ Statue>
+-Investigate the golden plates, hopefully they are indeed made of gold and you can get some money. <Ruined Temple/ Golden Plates>
+-Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
+<Ruined Temple/ "Around">
+-Leave temple. <Swamp entrance- After Temple>
+
 
 	Ruined Temple - Drawings(After Plates)
 	
@@ -100,7 +117,15 @@ that you can see the bones surounded by your black, burnt flesh. You quickly wit
 scared you just lost three of your fingers and it hurts like hell, what the hell is wrong with whoever made this temple you 
 wonder, why the obsesion with fire and gold? why couldn't they just put their valuables in a nice chest in a dark cave like a 
 normal person? Why all these puzzles, what do the developers of the game think you are, a 4 years old with too much time in your 
-hands?...(Player takes damage about 5%)
+hands?...(Player takes damage: 5%)
+
+-Investigate Statue. <Ruined Temple/ Statue>
+-Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
+-Investigate the golden plates, hopefully they are indeed made of gold and you can get some money. <Ruined Temple/ Golden Plates>
+-Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
+<Ruined Temple/ "Around">
+-Leave temple. <Swamp entrance- After Temple>
+
 
 	Ruined Temple - Golden Plates(Empty)
 	
@@ -114,13 +139,82 @@ closest golden plate to you, you see something engraved right in the middle of i
 clean the dust away from the next plate you see there is something written on it too: 𐌐𐌓𐌉𐌌𐌀 𐌔𐌕𐌄𐌋𐌋𐌀 𐌃𐌄 𐌖𐌉𐌍𐌂𐌖𐌋𐌏, last you check 
 the plate behind the statue, and on this one it's engarved: 𐌗𐌋𐌉𐌀𐌓𐌉. What could it mean you wonder, maybe it means something...
 
-	Ruined Temple - Golden Plates(Sacrifice)
+-Investigate Statue. <Ruined Temple/ Statue>
+-Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
+-Place collected materials on the plates. <Ruined Temple/ Active Plates> (Only if the player has all materials: a goat's horn, 
+fur and nail)
+-Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
+<Ruined Temple/ "Around">
+-Leave temple. <Swamp entrance- After Temple>
+
+
+	Ruined Temple - Golden Plates(Activation/active)
 	
-	.
+	You place the materials on top of the strange characters written in the plates. You place the goat horn on the plate that 
+has written "𐌗𐌋𐌉𐌀𐌓𐌉", the fur on the plate that has written "𐌔𐌄𐌂𐌏𐌍𐌃𐌀 𐌔𐌕𐌄𐌋𐌋𐌀 𐌃𐌄 𐌖𐌉𐌍𐌂𐌖𐌋𐌏" on it and the nail on the last plate: 
+"𐌓𐌉𐌌𐌀 𐌔𐌕𐌄𐌋𐌋𐌀 𐌃𐌄 𐌖𐌉𐌍𐌂𐌖𐌋𐌏". As soon as the nail touches the golden plate, all 3 materials you just placed burst into flames, the 
+strange drawings start to glow, first the circles surrounding the plates and then it slowly extends along the lines, it looks as 
+if they would get filled with some liquid. As you follow the light along the lines, rising your eyes little by little, you notice 
+that the light reveals something written on the pedestal of the statue, it says: "The Password is : ARIES". Now, now... don't get 
+so full of yourself, just because you got the password doesn't mean you know what to do with it!
+
+-Investigate Statue. <Ruined Temple/ Statue> 
+-Check writting on pedestal. <Ruined Temple/ Pedestal(after plates)>
+-Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
+-Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
+<Ruined Temple/ "Around">
+
 	
+	Ruined Temple - Pedestal
+
+	There's something written on this pedestal, it says: "The Password is : ARIES", I wonder the password to what?...
+
+-Investigate Statue. <Ruined Temple/ Statue> 
+-Check writting on pedestal. <Ruined Temple/ Pedestal(after plates)>
+-Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
+-Keep roaming around, maybe there’s something you’re not seeing, or maybe there isn’t, but you can’t be sure, can you? 
+<Ruined Temple/ "Around">
+	
+
 	Ruined Temple - "Around"
 	
+	"Who cares about strange statues or golden plates, there has to be somethiong better in this place" you thought to 
+yourself as you wondered, step by step, into the darkness. Strangely, you barely went 5 steps into that soul-consuming darkness
+and already hit a wall, with your face, hard! As you're falling on your ass you notice a strange light flashing around you, like 
+a firefly with super-speed, like "Flashy Gonzales" carrying a torch, like a laser beam fired at you by a Hurricanetrooper, you 
+get the idea. As you open your eyes and look in front of you, there's a giant door with 5 slots in it, one after another, 
+arranged horizontaly, and all around you there are some stone cubes with letters engraved on them, they seem to fit perfectly 
+into the sockets on the door. Ah! and there's light now, no idea where it is coming from but who cares, you can see. Maybe your 
+head is a light bulb and your butt is the switch...
+
+-Investigate Statue. <Ruined Temple/ Statue> 
+-Check writting on pedestal. <Ruined Temple/ Pedestal(after plates)>
+-Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
+-Investigate the golden plates, hopefully they are indeed made of gold and you can get some money. <Ruined Temple/ Golden Plates>
 	
+	
+	Ruined Temple - Behind the door
+	
+	
+	
+	Swamp entrance - after temple
+	
+	You decidede to leave the teample and, honestly, i think it is a good idea, that place was really unsettling. You leave
+the same way to came in, thorugh the front door, as you enter the long hallway that you entered through you start seeing the light
+at the end, you move step by step towards it until you're finally outside, in the muddy swamp, at least you can breath some fresh 
+air and feel the sun. It's way better to be outside exploring, than inside of that dusty old temple, what could even be in there?
+some stupid caveman drawings on the walls?
+
+	Ruined Temple - Another time
+	
+	Seriously? haven't you had enough of this dusty place? Fine, be it as you want. You get inside the temple once more, 
+through the same, about to collapse, old hallway and voyla, you find yourself back in the middle of the large room, staring at 
+the statue's odd stance.
+
+	Swamp - North-East
+	
+	
+
 
 //Mountain
 
