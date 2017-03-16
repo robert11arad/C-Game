@@ -156,7 +156,7 @@ int clearings()
             case 0:
                 cout << endl << endl;
 
-                cout << CHARACTER_NAME << " you just woke up in a dark place. You do not have any idea where you are. " << endl;
+                cout << /*CHARACTER_NAME <<*/ " You just woke up in a dark place. You do not have any idea where you are. " << endl;
                 cout << "You must find your way out alive. On your journey, you may run into obstacles you " << endl;
                 cout << "have never imagined before. Choose a direction to proceed further." << endl << endl;
 
@@ -167,12 +167,12 @@ int clearings()
                 if (OPTION == "GO RIGHT" || OPTION == "GO EAST")
                 {
                     STORY_PROGRESSION = 1;
-                    UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
+                    //UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
                 }
                 else if (OPTION == "GO LEFT" || OPTION == "GO WEST")
                 {
                     STORY_PROGRESSION = 2;
-                    UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
+                    //UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
                 }
                 else // default response when the option is not allowed
                 {
@@ -192,17 +192,18 @@ int clearings()
                 getline(cin,OPTION);
 
                 transform(OPTION.begin(),OPTION.end(),OPTION.begin(),::toupper); //Used to make everything the player typed in capital for easier comparisson
-                if (OPTION == "GO EAST")
+                if (OPTION == "GO EAST_")
                 {
                     cout << "There is a dungeon. You may not get alive from there. Think wisely what to do." << endl;
+                    //return dungeon
                     STORY_PROGRESSION = 4;
-                    UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
+                    //UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
                 }
                 else if (OPTION == "GO WEST")
                 {
                     cout << "There is a clearing leading to the high, cold mountains which are hiding unexpected secrets." << endl;
-                    STORY_PROGRESSION = 3;
-                    UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
+                    STORY_PROGRESSION = 2;
+                    //UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
                 }
                 else  // default response when the option is not allowed
                 {
@@ -229,15 +230,17 @@ int clearings()
                     return cloudland();
                     //CLOUDLAND STORY
                     STORY_PROGRESSION = 12;
-                    UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
+                    //UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
                     
                      
                 }
-                else if (OPTION == "RUN EAST" || OPTION == "RUN TO EAST")
+                else if (OPTION == "RUN EAST_" || OPTION == "RUN TO EAST")
                 {
-                    cout << "That exhausted you but you reached successfully the swamp…" << endl; //SWAMP STORY
+                    cout << "That exhausted you but you reached successfully the swamp…" << endl; 
+                    //SWAMP STORY
+                    // return swamp
                     STORY_PROGRESSION = 21;
-                     UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
+                    //UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
                 }
         
                 
@@ -277,13 +280,13 @@ int clearings()
                            if (Won) // if the player won then to continue the progression
                            {
                                STORY_PROGRESSION = 32;
-                               UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
+                               //UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
                            }
                             else // if the player lost to repeat the progresssion 
                             {
                                 cout << "You lost and so the fairies whiped your memory of them" << endl << endl;
                                 STORY_PROGRESSION = 19;
-                                UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
+                                //UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
                                 
                             }
                             
