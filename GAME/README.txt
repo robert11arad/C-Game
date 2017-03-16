@@ -9,5 +9,5 @@ If you give the funtion the name "example()", add it to the "header.h" file as i
 RUN THE COMMAND:
 g++ --std=c++11 main.cpp cloudland.cpp clearings.cpp [ADD OTHER FILES HERE] -o [NAME OF TH GAME FILE] -l sqlite3
 
-P.S. Clearings and cloudland, the ones in this folder, already work. The only part that does not work is the database for clearings, as the file is not on github.
+P.S. Clearings and cloudland, the ones in this folder, already work. The database is not being used though.
 
