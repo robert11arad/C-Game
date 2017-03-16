@@ -35,15 +35,15 @@ int out(string value){
     }
     else if(value == "leaveR"){
         // Leaves cloudland 
-        cout << "You leave cloudland to ... r" << endl;
-        // return 0; add new section here
+        cout << "You leave cloudland and enter a shed" << endl;
+        return shed();
         save(saveName, "|_F1N1SHED_|");
     }
     else if(value == "leaveH"){
         gameScore = gameScore + 300;
         // Leaves cloudland 
-        cout << "You leave cloudland to ... h" << endl;
-        // return 1; add nre section here
+        cout << "You leave cloudland and enter a dungeon" << endl;
+        return dungeon();
         save(saveName, "|_F1N1SHED_|");
     }
     else if (value == "fight"){

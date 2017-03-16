@@ -3,6 +3,8 @@
 
 int cloudland();
 int clearings();
-int story();
+int dungeonStory();
+int shed();
+int dungeon();
 
 #endif

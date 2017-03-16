@@ -195,7 +195,7 @@ int clearings()
                 if (OPTION == "GO EAST_")
                 {
                     cout << "There is a dungeon. You may not get alive from there. Think wisely what to do." << endl;
-                    //return dungeon
+                    return dungeon();
                     STORY_PROGRESSION = 4;
                     //UpdateDatabase("CheckPoint");//Call to this function to update the story progression into the database
                 }
