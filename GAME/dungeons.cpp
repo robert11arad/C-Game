@@ -198,10 +198,9 @@ int dungeonStory()
 	{
 		cout << "\nYou are in a clearing with lots of trees around you, there is a gravel path to the east and west of you\n" << endl;
         return clearings();
-    }
-    getline (cin, command);    
-    if (command == "go east")
-   {
+    }   
+    else if (command == "go east")
+    {
         cout << "\nYou enter another clearing with heavy grass and notice a abondoned shed with sign on it Gardeners dream\n" << endl;
         return shed();
     }
