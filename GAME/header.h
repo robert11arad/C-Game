@@ -3,6 +3,6 @@
 
 int cloudland();
 int clearings();
-
+int story();
 
 #endif
