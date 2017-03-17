@@ -6,5 +6,6 @@ int clearings();
 int dungeonStory();
 int shed();
 int dungeon();
+int mountain();
 
 #endif
