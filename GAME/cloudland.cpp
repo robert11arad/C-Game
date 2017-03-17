@@ -35,8 +35,8 @@ int out(string value){
     }
     else if(value == "leaveR"){
         // Leaves cloudland 
-        cout << "You leave cloudland and enter a shed" << endl;
-        return shed();
+        cout << "You leave cloudland." << endl;
+        return mountains();
         save(saveName, "|_F1N1SHED_|");
     }
     else if(value == "leaveH"){
