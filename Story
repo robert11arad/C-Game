@@ -132,15 +132,17 @@ cout<<"Game Over"<<endl;
 
 	Ruined Temple - Golden Plates(Empty)
 	
-	There are 3 golden plates around the statue, each of them inside their own yellow circle, one of them is behind the 
-statue, slightly to the right, the other 2 are in front of the statue, the one closer to the statue between the two, is right in 
-front of it about 5 cm to the left, and the other one is slightly further away from the statue and much more to the left. They 
-seem to make some kind of pattern, the one behind being connected to the statue directly and the one right in front of it too, 
-only the one that's further away is connected to the next golden plate instead of the statue directly. As you inspect the 
-closest golden plate to you, you see something engraved right in the middle of it, something is written there: 𐌔𐌄𐌂𐌏𐌍𐌃𐌀 𐌔𐌕𐌄𐌋𐌋𐌀 
-𐌃𐌄 𐌖𐌉𐌍𐌂𐌖𐌋𐌏. You go to check the other plates as well to see if there's anything written on them as well, and the moment you 
-clean the dust away from the next plate you see there is something written on it too: 𐌐𐌓𐌉𐌌𐌀 𐌔𐌕𐌄𐌋𐌋𐌀 𐌃𐌄 𐌖𐌉𐌍𐌂𐌖𐌋𐌏, last you check 
-the plate behind the statue, and on this one it's engarved: 𐌗𐌋𐌉𐌀𐌓𐌉. What could it mean you wonder, maybe it means something...
+cout<<"There are 3 golden plates around the statue, each of them inside their own yellow circle, one of them is behind the"<<endl; 
+cout<<"statue, slightly to the right, the other 2 are in front of the statue, the one closer to the statue between the two, is right in"<<endl;
+cout<<"front of it about 5 cm to the left, and the other one is slightly further away from the statue and much more to the left. They"<<endl;
+cout<<"seem to make some kind of pattern, the one behind being connected to the statue directly and the one right in front of it too,"<<endl;
+cout<<"only the one that's further away is connected to the next golden plate instead of the statue directly. As you inspect the"<<endl;
+cout<<"closest golden plate to you, you see something engraved right in the middle of it, something is written there: 𐌔𐌄𐌂𐌏𐌍𐌃𐌀 𐌔𐌕𐌄𐌋𐌋𐌀"<<endl;
+cout<<"𐌃𐌄 𐌖𐌉𐌍𐌂𐌖𐌋𐌏. You go to check the other plates as well to see if there's anything written on them as well, and the moment you"<<endl;
+cout<<"clean the dust away from the next plate you see there is something written on it too: 𐌐𐌓𐌉𐌌𐌀 𐌔𐌕𐌄𐌋𐌋𐌀 𐌃𐌄 𐌖𐌉𐌍𐌂𐌖𐌋𐌏, last you check"<<endl;
+cout<<"the plate behind the statue, and on this one it's engarved: 𐌗𐌋𐌉𐌀𐌓𐌉. What could it mean you wonder, it has to mean something..."<<endl;
+cout<<"Something feels strange, you strat to feel deezy, all of a sudden you colapse on the cold, and hard floor..."<<endl<<endl;
+cout<<"Game Over!"<<endl;
 
 -Investigate Statue. <Ruined Temple/ Statue>
 -Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
