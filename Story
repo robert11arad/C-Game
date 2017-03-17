@@ -64,18 +64,17 @@ cout<<"statue, and inside the circles are some kind of golden plates."<<endl;
 
 	Ruined Temple – Statue
 
-As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little 
-strange since you’re wearing clothes and it feels like the sun is warming you everywhere, and I mean everywhere, apart from the 
-fact that you are in a dark room, inside a temple, made of stone and there is no sunlight… Even though you feel like you’re going 
-crazy you make it to the statue and put your hand on it’s pedestal, as your hand touches the pedestal you feel bombarded with 
-sunlight,  and the grass tickling your bare feet, you find yourself naked in that strange place, with your hand on the bark of a 
-tree. You close your eyes and take your hand off of the tree, as you open them you notice that you are back in the temple, but 
-now there is a giant ball of fire right above the statue’s head that lights the whole room. You take some steps back and look at 
-the statue, which seems to be praising the sun, standing tall on two feet, with it’s both arms raised at a 45 degree angle of 
-it’s head, with a giant ball of fire between it’s arms, right above it’s head. Something seems wrong with the fireball, it looks
-like is going to explode.
-
-Game Over!
+cout<<"As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little"<<endl;
+cout<<"strange since you’re wearing clothes and it feels like the sun is warming you everywhere, and I mean everywhere, apart from the"<<endl;
+cout<<"fact that you are in a dark room, inside a temple, made of stone and there is no sunlight… Even though you feel like you’re going"<<endl;
+cout<<"crazy you make it to the statue and put your hand on it’s pedestal, as your hand touches the pedestal you feel bombarded with"<<endl;
+cout<<"sunlight,  and the grass tickling your bare feet, you find yourself naked in that strange place, with your hand on the bark of a"<<endl;
+cout<<"tree. You close your eyes and take your hand off of the tree, as you open them you notice that you are back in the temple, but"<<endl;
+cout<<"now there is a giant ball of fire right above the statue’s head that lights the whole room. You take some steps back and look at"<<endl;
+cout<<"the statue, which seems to be praising the sun, standing tall on two feet, with it’s both arms raised at a 45 degree angle of"<<endl;
+cout<<"it’s head, with a giant ball of fire between it’s arms, right above it’s head. Something seems wrong with the fireball, it looks"<<endl;
+cout<<"like is going to explode."<<endl<<endl;
+cout<<"Game Over!"<<endl;
 
 -Touch the statue again. <Ruined Temple/ Solaire’s Statue>
 -Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
@@ -112,15 +111,16 @@ there's nothing special to them, it looks like some yellow paint with a lot of l
 
 	Ruined Temple - Drawings(After Plates)
 	
-	You get down next to one of the lines and extend your arm to touch it, you're lost in thought as you gaze your sight upon 
-the golden line, the way it glows makes it seem like it's alive, like the fluctuations of it's glow is it's breathing, but 
-you lose all this train of thoughts the moment you lay your hand on the line because it feels like you've just touched the sun, 
-and no, i do not mean it as some profound and divine experience, i mean it as in you've just burned your fingers in such a manner 
-that you can see the bones surounded by your black, burnt flesh. You quickly withdraw your hand and get up, you're bat shit 
-scared you just lost three of your fingers and it hurts like hell, what the hell is wrong with whoever made this temple you 
-wonder, why the obsesion with fire and gold? why couldn't they just put their valuables in a nice chest in a dark cave like a 
-normal person? Why all these puzzles, what do the developers of the game think you are, a 4 years old with too much time in your 
-hands?...(Player takes damage: 5%)
+cout<<"You get down next to one of the lines and extend your arm to touch it, you're lost in thought as you gaze your sight upon"<<endl;
+cout<<"the golden line, the way it glows makes it seem like it's alive, like the fluctuations of it's glow is it's breathing, but"<<endl;
+cout<<"you lose all this train of thoughts the moment you lay your hand on the line because it feels like you've just touched the sun,"<<endl;
+cout<<"and no, i do not mean it as some profound and divine experience, i mean it as in you've just burned your fingers in such a manner"<<endl;
+cout<<"that you can see the bones surounded by your black, burnt flesh. You quickly withdraw your hand and get up, you're very"<<endl;
+cout<<"scared, you just burnt your fingers and it hurts like hell, what is wrong with whoever made this temple you wonder,"<<endl;
+cout<<"why the obsesion with fire and gold? why couldn't they just put their valuables in a nice chest in a dark cave like a"<<endl;
+cout<<"normal person? Why all these puzzles, what do the developers of the game think you are, a 4 years old with too much time in your"<<endl;
+cout<<"hands?... And worse of all the burnt on your hand is from magic so it is killing you..."<<endl<<endl;
+cout<<"Game Over"<<endl;
 
 -Investigate Statue. <Ruined Temple/ Statue>
 -Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
