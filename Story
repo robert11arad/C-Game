@@ -45,14 +45,14 @@ to hold at least one in your hands.
 
     	Ruined Temple
 
-	Making the first steps inside the temple, you feel a chill go down your spine, you can hear pebbles falling down from 
-the giant roof made of stone, you smell the old dust that’s been gathering there for a very long time. The walls have a lot of 
-cracks in them and the light passes through barely so you can see where you’re stepping, the only thing you know so far is that 
-you’re in a great hall that seems made for giants, and the only thing you can see clearly is the light coming from the door you 
-left behind you slowly fading away. You got to a giant opening where in the middle is a giant statue and a lot of fallen pillars, 
-you’re wondering how is it that the whole thing didn’t collapse already with so few pillars sustaining the giant roof. As you 
-look around the statue you observe some kind of lines and circles on the ground, the lines are connecting the circles to the 
-statue, and inside the circles are some kind of golden plates.
+cout<<"Making the first steps inside the temple, you feel a chill go down your spine, you can hear pebbles falling down from"<<endl;
+cout<<"the giant roof made of stone, you smell the old dust that’s been gathering there for a very long time. The walls have a lot of"<<endl;
+cout<<"cracks in them and the light passes through barely so you can see where you’re stepping, the only thing you know so far is that"<<endl; 
+cout<<"you’re in a great hall that seems made for giants, and the only thing you can see clearly is the light coming from the door you"<<endl; 
+cout<<"left behind you slowly fading away. You got to a giant opening where in the middle is a giant statue and a lot of fallen pillars,"<<endl; 
+cout<<"you’re wondering how is it that the whole thing didn’t collapse already with so few pillars sustaining the giant roof. As you"<<endl; 
+cout<<"look around the statue you observe some kind of lines and circles on the ground, the lines are connecting the circles to the"<<endl; 
+cout<<"statue, and inside the circles are some kind of golden plates."<<endl;
 
 -Investigate Statue. <Ruined Temple/ Statue>
 -Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
