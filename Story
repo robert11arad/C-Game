@@ -216,7 +216,18 @@ some stupid caveman drawings on the walls?
 through the same, about to collapse, old hallway and voyla, you find yourself back in the middle of the large room, staring at 
 the statue's odd stance.
 
-	Swamp - 
+	Swamp - Monster
+	
+cout<<"There seems to be something further in the swamp, just by the mountain, it looks like a strange tree. Because of your curiosity"<<endl;
+cout<<"you feel the need to aproach it, see what it might be, so you move slowly towards it. As you get closer it looks more and more like"<<endl;
+cout<<"a strange animal, it seems to have fur, and horns, and it is sleeping next to a huge swaord. You are next to it, you see it clearly now,"<<endl;
+cout<<"it is a huge, green goat, it seems to be holding the huge sword. Good thing it's asleep or else who knows, maybe it would've killed you."<<endl;
+cout<<"You strike it swftly right between it's eyes, and you can feel as it stops breathing... You just killed it, I honestly think you should"<<endl;
+cout<<"be ashamed of yourself for killing a defenseless animal like that. Well whatever, your life, your sin. As you check the corpse of the"<<endl; 
+cout<<"animal you've just killed you notice it is wearing a key around it's neck, on a necklance, so you quickly grab it."<<endl;
+cout<<"There's nothing left for you to do in this swamp, you'd better leave it."<<endl<<endl;
+cout<<"Options:"<<endl;
+cout<<"1.Leave Swamp"<<endl;
 	
 	
 
