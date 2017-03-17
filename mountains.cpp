@@ -94,4 +94,4 @@ int cliff()
        cout << "\nYou enter the cave, it’s very dark and damp inside, you can just about make out that the cave splits off to the left and right\n" << endl;
        return caveentrance();
     }
-}
+} 
