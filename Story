@@ -64,7 +64,7 @@ cout<<"statue, and inside the circles are some kind of golden plates."<<endl;
 
 	Ruined Temple – Statue
 
-	As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little 
+As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little 
 strange since you’re wearing clothes and it feels like the sun is warming you everywhere, and I mean everywhere, apart from the 
 fact that you are in a dark room, inside a temple, made of stone and there is no sunlight… Even though you feel like you’re going 
 crazy you make it to the statue and put your hand on it’s pedestal, as your hand touches the pedestal you feel bombarded with 
@@ -72,7 +72,10 @@ sunlight,  and the grass tickling your bare feet, you find yourself naked in tha
 tree. You close your eyes and take your hand off of the tree, as you open them you notice that you are back in the temple, but 
 now there is a giant ball of fire right above the statue’s head that lights the whole room. You take some steps back and look at 
 the statue, which seems to be praising the sun, standing tall on two feet, with it’s both arms raised at a 45 degree angle of 
-it’s head, with a giant ball of fire between it’s arms, right above it’s head.
+it’s head, with a giant ball of fire between it’s arms, right above it’s head. Something seems wrong with the fireball, it looks
+like is going to explode.
+
+Game Over!
 
 -Touch the statue again. <Ruined Temple/ Solaire’s Statue>
 -Check the strange drawings on the floor that connect the statue with the golden plates. <Ruined Temple/ Drawings>
@@ -211,7 +214,7 @@ some stupid caveman drawings on the walls?
 through the same, about to collapse, old hallway and voyla, you find yourself back in the middle of the large room, staring at 
 the statue's odd stance.
 
-	Swamp - North-East
+	Swamp - 
 	
 	
 
