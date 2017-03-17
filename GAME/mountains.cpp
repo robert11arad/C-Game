@@ -80,7 +80,7 @@ int map()
     return caveentrance();
 }
 
-int cliff()
+int mountain()
 {
     cout << "\nYou reach a cliff about halfway up the mountain, you notice a pile of rocks off to the left and an opening to a cave in front of you\n" << endl;
     getline (cin, command);
