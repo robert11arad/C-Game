@@ -1,123 +1,417 @@
-#include "Swamp.h"
+#include<iostream>
+#include<string>
+#include<cstring>
+#include<sqlite3.h>
+#include<cstdio>
+#include<windows.h>
+#include<iomanip>
+#include<conio.h>
 
-Swamp::Swamp()
-{
-    //ctor
-}
+using namespace std;
+int plates=0, statue=0, boss=0, temple=0, templetotal=0, mystdoor=0, health=100;
+string name="import";
+void RuinedTemple();
 
-Swamp::~Swamp()
-{
-    //dtor
-}
-void Swamp::Enter()
+
+static int callback(void *NotUsed, int argc, char **argv, char **azColName)
+	{
+		int i;
+		for (i = 0; i<argc; i++) {
+			printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
+		}
+		printf("\n");
+		return 0;
+	}
+
+	void displayGameDatabase()
+	{
+		sqlite3 *db;
+		char *zErrMsg = 0;
+		int  rc;
+		char *sql;
+
+		/* Open database */
+		rc = sqlite3_open("database.db", &db);
+		if (rc) {
+			fprintf(stderr, "-Can't open database: %s\n", sqlite3_errmsg(db));
+		}
+		else {
+			fprintf(stdout, "-Database ---> database.db ACTIVE\n\n");
+		}
+
+		/* Create SQL statement */
+		sql = "SELECT * from Inventory;";
+
+		/* Execute SQL statement */
+		rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+		if (rc != SQLITE_OK) {
+			fprintf(stderr, "-INFO: %s\n\n", zErrMsg);
+			sqlite3_free(zErrMsg);
+		}
+		else {
+			fprintf(stdout, "-Database: Working - Everything saved..\n");
+		}
+		sqlite3_close(db);
+	}
+
+    void CreateGameDatabase()
+	{
+	 sqlite3 *db;
+	char *zErrMsg = 0;
+	int  rc;
+	char *sql;
+
+	/* Open database */
+	rc = sqlite3_open("database.db", &db);
+	if (rc) {
+		fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+	}
+	else {
+		fprintf(stdout, "Database Opened Successfully\n");
+	}
+
+	/* Create SQL statement */
+	sql = "CREATE TABLE Enemy("
+		"ID INT PRIMARY        KEY      NOT NULL," \
+		"NAME            TEXT     NOT NULL," \
+		"COLOUR          TEXT     NOT NULL);" \
+		
+
+	/* Execute SQL statement */
+	rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+	if (rc != SQLITE_OK) {
+		fprintf(stderr, "INFO: %s\nIGNORE Existing Table - just for checking.\n", zErrMsg);
+		sqlite3_free(zErrMsg);
+	}
+	else {
+		fprintf(stdout, "Table created successfully.\n");
+	}
+	sqlite3_close(db);
+
+	}
+
+	void addNeckToDB()
+	{
+		sqlite3 *db;
+		char *zErrMsg = 0;
+		int  rc;
+		char *sql;
+
+		/* Open database */
+		rc = sqlite3_open("database.db", &db);
+		if (rc) {
+			fprintf(stderr, "-Can't open database: %s\n", sqlite3_errmsg(db));
+		}
+		else {
+			fprintf(stdout, "-Opened database successfully\n");
+		}
+
+		/* Create SQL statement */
+		sql = "INSERT INTO Inventory (ID, NAME, COLOUR, QUANTITY) " \
+			"VALUES (1, 'Necklace', 'Blue', 1);";
+
+		/* Execute SQL statement */
+		rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+		if (rc != SQLITE_OK) {
+			fprintf(stderr, "-INFO: %s\n\n", zErrMsg);
+			sqlite3_free(zErrMsg);
+		}
+		else {
+			fprintf(stdout, "-Necklace added successfully.\n");
+			cout << rc;
+
+		}
+		sqlite3_close(db);
+	}
+
+void resetDB()
+	{
+		sqlite3 *db;
+		char *zErrMsg = 0;
+		int  rc;
+		char *sql;
+
+		/* Open database */
+		rc = sqlite3_open("database.db", &db);
+		if (rc) {
+			fprintf(stderr, "-Can't open database: %s\n", sqlite3_errmsg(db));
+		}
+		else {
+			fprintf(stdout, "-DATABASE: OPENED - OK --- RESETING ALL VALUES\n");
+		}
+
+		/* Create SQL statement */
+		sql = "DELETE FROM Inventory;";
+
+		/* Execute SQL statement */
+		rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+		if (rc != SQLITE_OK) {
+			fprintf(stderr, "-INFO: %s\nIGNORE Existing Table - just for checking.\n", zErrMsg);
+			sqlite3_free(zErrMsg);
+		}
+		else {
+			fprintf(stdout, "-Database has been reseted successfully.\n");
+		}
+		sqlite3_close(db);
+	}
+
+
+void addFurToDB()
+	{
+		sqlite3 *db;
+		char *zErrMsg = 0;
+		int  rc;
+		char *sql;
+
+		/* Open database */
+		rc = sqlite3_open("database.db", &db);
+		if (rc) {
+			fprintf(stderr, "-Can't open database: %s\n", sqlite3_errmsg(db));
+		}
+		else {
+			fprintf(stdout, "-Opened database successfully\n");
+		}
+
+		/* Create SQL statement */
+		sql = "INSERT INTO Inventory (ID, NAME, COLOUR, QUANTITY) " \
+			"VALUES (2, 'Fur', 'Grey', 1);";
+
+		/* Execute SQL statement */
+		rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+		if (rc != SQLITE_OK) {
+			fprintf(stderr, "-INFO: %s\n\n", zErrMsg);
+			sqlite3_free(zErrMsg);
+		}
+		else {
+			fprintf(stdout, "-Fur added successfully.\n");
+			cout << rc;
+
+		}
+		sqlite3_close(db);
+	}
+void addHoofToDb():
+    {
+		sqlite3 *db;
+		char *zErrMsg = 0;
+		int  rc;
+		char *sql;
+
+		/* Open database */
+		rc = sqlite3_open("database.db", &db);
+		if (rc) {
+			fprintf(stderr, "-Can't open database: %s\n", sqlite3_errmsg(db));
+		}
+		else {
+			fprintf(stdout, "-Opened database successfully\n");
+		}
+
+		/* Create SQL statement */
+		sql = "INSERT INTO Inventory (ID, NAME, COLOUR, QUANTITY) " \
+			"VALUES (3, 'Hoof', 'Yellow', 1);";
+
+		/* Execute SQL statement */
+		rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+		if (rc != SQLITE_OK) {
+			fprintf(stderr, "-INFO: %s\n\n", zErrMsg);
+			sqlite3_free(zErrMsg);
+		}
+		else {
+			fprintf(stdout, "-Fur added successfully.\n");
+			cout << rc;
+
+		}
+		sqlite3_close(db);
+	}
+
+
+int trychoice(int maxchoices, string options)
 {
     int choice;
+    cout<<options<<endl;
+    cout<<"\nEnter selection:"; cin>>choice;
 
-    cout<< "As you enter the muddy swamp you notice that it is very large, it seems going around a mountain of some sorts and it"<<endl;
-cout<<"stretches further to the North and to the West, more than you wouldâ€™ve hoped it to. About 100 meters further from the entrance "<<endl;
-cout<<"there is a Temple in ruins, it seems very old, like no one has entered it for thousands of years, youâ€™re not sure if you should "<<endl;
-cout<<"go in there, maybe youâ€™re disturbing a sacred place. About  50 meters to the right of the Temple there is a bush of thorny, green "<<endl;
-cout<<"vines that have grown on them some beautiful pink flowers, theyâ€™re like nothing youâ€™ve ever seen before, you feel like you have "<<endl;
-cout<<"to hold at least one in your hands. You have 2 options : "<< endl<<endl;
-    cout<< "1: Investigate ruined Temple" << endl;
-    cout<< "2: Go further in the Swamp" <<  endl;
-    cout<< "Enter choice: ";
-
-    cin>>choice;
-
-    if(choice ==1)
+    while(choice>=maxchoices+1 || choice<=0)
     {
-        cout<<"Making the first steps inside the temple, you feel a chill go down your spine, you can hear pebbles falling down from"<<endl;
-cout<<"the giant roof made of stone, you smell the old dust thatâ€™s been gathering there for a very long time. The walls have a lot of"<<endl;
-cout<<"cracks in them and the light passes through barely so you can see where youâ€™re stepping, the only thing you know so far is that"<<endl;
-cout<<"youâ€™re in a great hall that seems made for giants, and the only thing you can see clearly is the light coming from the door you"<<endl;
-cout<<"left behind you slowly fading away. You got to a giant opening where in the middle is a giant statue and a lot of fallen pillars,"<<endl;
-cout<<"youâ€™re wondering how is it that the whole thing didnâ€™t collapse already with so few pillars sustaining the giant roof. As you"<<endl;
-cout<<"look around the statue you observe some kind of lines and circles on the ground, the lines are connecting the circles to the"<<endl;
-cout<<"statue, and inside the circles are some kind of golden plates."<<endl;
-
-        cout<< " You have to choose between 3 directions to be your next destination"<< endl;
-        cout << " Enter 1 to see the statue, 2 to investigate the drawings or 3 to investigate the golden plates" << endl;
-        cout << "Choice :" << endl;
-        int choice1;
-
-        cin >> choice1;
-
-        if ( choice1 == 1)
-        {
-            cout<<"As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little"<<endl;
-cout<<"strange since youâ€™re wearing clothes and it feels like the sun is warming you everywhere, and I mean everywhere, apart from the"<<endl;
-cout<<"fact that you are in a dark room, inside a temple, made of stone and there is no sunlightâ€¦ Even though you feel like youâ€™re going"<<endl;
-cout<<"crazy you make it to the statue and put your hand on itâ€™s pedestal, as your hand touches the pedestal you feel bombarded with"<<endl;
-cout<<"sunlight,  and the grass tickling your bare feet, you find yourself naked in that strange place, with your hand on the bark of a"<<endl;
-cout<<"tree. You close your eyes and take your hand off of the tree, as you open them you notice that you are back in the temple, but"<<endl;
-cout<<"now there is a giant ball of fire right above the statueâ€™s head that lights the whole room. You take some steps back and look at"<<endl;
-cout<<"the statue, which seems to be praising the sun, standing tall on two feet, with itâ€™s both arms raised at a 45 degree angle of"<<endl;
-cout<<"itâ€™s head, with a giant ball of fire between itâ€™s arms, right above itâ€™s head. Something seems wrong with the fireball, it looks"<<endl;
-cout<<"like is going to explode."<<endl<<endl;
-cout<<"Game Over!"<<endl;
-
-        }
-
-        else if(choice1 ==2)
-        {
-        cout<<"You get down next to one of the lines and extend your arm to touch it, you're lost in thought as you gaze your sight upon"<<endl;
-cout<<"the golden line, the way it glows makes it seem like it's alive, like the fluctuations of it's glow is it's breathing, but"<<endl;
-cout<<"you lose all this train of thoughts the moment you lay your hand on the line because it feels like you've just touched the sun,"<<endl;
-cout<<"and no, i do not mean it as some profound and divine experience, i mean it as in you've just burned your fingers in such a manner"<<endl;
-cout<<"that you can see the bones surounded by your black, burnt flesh. You quickly withdraw your hand and get up, you're very"<<endl;
-cout<<"scared, you just burnt your fingers and it hurts like hell, what is wrong with whoever made this temple you wonder,"<<endl;
-cout<<"why the obsesion with fire and gold? why couldn't they just put their valuables in a nice chest in a dark cave like a"<<endl;
-cout<<"normal person? Why all these puzzles, what do the developers of the game think you are, a 4 years old with too much time in your"<<endl;
-cout<<"hands?... And worse of all the burnt on your hand is from magic so it is killing you..."<<endl<<endl;
-cout<<"Game Over"<<endl;
-
-        }
-
-        else if ( choice1 == 3)
-        {
-        cout<<"There are 3 golden plates around the statue, each of them inside their own yellow circle, one of them is behind the"<<endl;
-cout<<"statue, slightly to the right, the other 2 are in front of the statue, the one closer to the statue between the two, is right in"<<endl;
-cout<<"front of it about 5 cm to the left, and the other one is slightly further away from the statue and much more to the left. They"<<endl;
-cout<<"seem to make some kind of pattern, the one behind being connected to the statue directly and the one right in front of it too,"<<endl;
-cout<<"only the one that's further away is connected to the next golden plate instead of the statue directly. As you inspect the"<<endl;
-cout<<"closest golden plate to you, you see something engraved right in the middle of it, something is written there: íŸ±í´°Ì„íŸ°í²°ÌíŸ°í½°ÌƒíŸ°í° íŸ±í´°Ì•íŸ°í´°Ì‹íŸ°í»°Ì€"<<endl;
-cout<<"íŸ°í³°Ì„ íŸ±í¶°Ì‰íŸ°í½°Ì‚íŸ±í¶°Ì‹íŸ°í¿® You go to check the other plates as well to see if there's anything written on them as well, and the moment you"<<endl;
-cout<<"clean the dust away from the next plate you see there is something written on it too: íŸ±í°°Ì“íŸ°í¹°ÌŒíŸ°í° íŸ±í´°Ì•íŸ°í´°Ì‹íŸ°í»°Ì€ íŸ°í³°Ì„ íŸ±í¶°Ì‰íŸ°í½°Ì‚íŸ±í¶°Ì‹íŸ°í¿¬ last you check"<<endl;
-cout<<"the plate behind the statue, and on this one it's engarved: íŸ±í·°Ì‹íŸ°í¹°Ì€íŸ±í³°Ì‰. What could it mean you wonder, it has to mean something..."<<endl;
-cout<<"Something feels strange, you strat to feel deezy, all of a sudden you colapse on the cold, and hard floor..."<<endl<<endl;
-cout<<"Game Over!"<<endl;
-
-        }
-
-
-
-
+        cout<<"That's not an option!";
+        choice=trychoice(maxchoices, options);
     }
-    else if(choice == 2)
+    return choice;
+}
+void Swamp()
+{   int choice;
+    if(temple==0)
     {
-    int leave;
-        cout<<"There seems to be something further in the swamp, just by the mountain, it looks like a strange tree. Because of your curiosity"<<endl;
-cout<<"you feel the need to aproach it, see what it might be, so you move slowly towards it. As you get closer it looks more and more like"<<endl;
-cout<<"a strange animal, it seems to have fur, and horns, and it is sleeping next to a huge swaord. You are next to it, you see it clearly now,"<<endl;
-cout<<"it is a huge, green goat, it seems to be holding the huge sword. Good thing it's asleep or else who knows, maybe it would've killed you."<<endl;
-cout<<"You strike it swftly right between it's eyes, and you can feel as it stops breathing... You just killed it, I honestly think you should"<<endl;
-cout<<"be ashamed of yourself for killing a defenseless animal like that. Well whatever, your life, your sin. As you check the corpse of the"<<endl;
-cout<<"animal you've just killed you notice it is wearing a key around it's neck, on a necklance, so you quickly grab it."<<endl;
-cout<<"There's nothing left for you to do in this swamp, you'd better leave it."<<endl<<endl;
-cout<<"Options:"<<endl;
-cout<<"1.Leave Swamp"<<endl;
-cin >> leave ;
+        cout<<"As you enter the muddy swamp you notice that it is very large, it seems going around a mountain of some sorts and it stretches further to the North, more than you wouldâ€™ve hoped it to. About 100 meters further from the entrance there is a Temple in ruins, it seems very old, like no one has entered it for thousands of years, youâ€™re not sure if you should go in there, maybe youâ€™re disturbing a sacred place. About  50 meters to the right of the Temple there is a bush of thorny, green vines that have grown on them some beautiful pink flowers, theyâ€™re like nothing youâ€™ve ever seen before, you feel like you have to hold at least one in your hands."<<endl;
+        string options="Options:\n1.Investigate ruined temple.\n2.Go further north through the muddy swamp.\n3.Leave Swamp.";
+        choice=trychoice(3,options);
+    }
+    else if(temple==1)
+    {
+        temple=0;
 
+        if(templetotal==1)
+        {
+            cout<<"You finally decided to leave the teample. Honestly, I think it is for the best, that place was really unsettling.\nYou leave the same way to came in, thorugh the front door, as you enter the long hallway that you entered through you start seeing the light at the end, you move step by step towards it until you're finally outside, in the muddy swamp, at least you can breath some fresh air and feel the sun. It's way better to be outside exploring, than inside of that dusty old temple, what could even be in there? some stupid caveman drawings on the walls?"<<endl;
+        }
+        else if(templetotal>=2)
+        {
+            cout<<"You've returned to the muddy swamp."<<endl;
+        }
 
-
-
+        string options="Options:\n1.Investigate ruined temple again.\n2.Go further north through the muddy swamp.\n3.Leave Swamp.\n";
+        choice=trychoice(3,options);
     }
 
+    if(choice==2)
+    {
+        cout<<"Coming soon..."<<endl;
+    }
+    else if(choice==3)
+    {
+        cout<<"Someone else's part of the game."<<endl;
+    }
+    else if(choice==1)
+    {
+        RuinedTemple();
+    }
+}
+void RuinedTemple()
+{
+    if(temple==0)
+    {   templetotal+=1;
+        if(templetotal==1)
+        {
+            cout<<"I honestly can't understand why you insist so much on going in this cursed place, but if you are so eager to die, fine, i'm not gonna interfere anymore."<<endl;
+        }
+        else if(templetotal>=2)
+        {
+            cout<<"You've enetered the ruined temple."<<endl;
+        }
+        else if(templetotal==0)
+        {
+            cout<<"Making the first steps inside the temple, you feel a chill go down your spine, you can hear pebbles falling down from the giant roof made of stone, you smell the old dust thatâ€™s been gathering there for a very long time. The walls have a lot of cracks in them and the light barely passes through, in such a way for you to see where youâ€™re stepping, the only thing you know so far is that the further you venture into this place, greater is the urge to go back into the light, shinning from the door you left behind. You got to a big opening where, in the middle, there is a giant statue and a lot of fallen pillars,  youâ€™re wondering how is it that the whole thing didnâ€™t collapse already with so few pillars sustaining the enormous roof. As you look around, you observe some kind of lines and circles on the ground surounding a statue, the lines are connecting the circles to the statue, and inside the circles are some kind of golden plates."<<endl;
+        }
 
+        temple=1;
+    }
 
+    if(statue==0 && plates==0)
+    {
+        string options="Options:\n1.Investigate the statue.\n2.Check the strange drawings on the floor that connect the statue with the golden plates.\n3.Investigate the golden plates, hopefully they are indeed made of gold and you can get some money.\n4.Keep roaming around, maybe thereâ€™s something youâ€™re not seeing, or maybe there isnâ€™t, but you canâ€™t be sure, can you?\n5.Leave Temple\n";
+        int choice=trychoice(5,options);
 
+        if(choice==1)
+        {
+            statue=1;
+            cout<<"As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little strange since youâ€™re wearing clothes and it feels like the sun is warming you everywhere, and I mean everywhere, apart from the fact that you are in a dark room, inside a temple, made of stone and there is no sunlightâ€¦ Even though you feel like youâ€™re going crazy you make it to the statue and put your hand on itâ€™s pedestal, as your hand touches the pedestal you feel bombarded with sunlight,  and the grass tickling your bare feet, you find yourself naked in that strange place, with your hand on the bark of a tree. You close your eyes and take your hand off of the tree, as you open them you notice that you are back in the temple, but now there is a giant ball of fire right above the statueâ€™s head that lights the whole room. You take some steps back and look at the statue, which seems to be praising the sun, standing tall on two feet, with itâ€™s both arms raised at a 45 degree angle of itâ€™s head, with a giant ball of fire between itâ€™s arms, right above itâ€™s head."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==2)
+        {
+            cout<<"You get down and put your face against the floor, looking how the line, that you have your face on, stretches like a road, connecting the plate behind you to the statue that's right in front of you. Besides the strange pattern the drawings have, there's nothing special to them, it looks like some yellow paint with a lot of layers of dust on top."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==3)
+        {
+            cout<<"There are 3 golden plates around the statue, each of them inside their own yellow circle, one of them is behind the statue, slightly to the right, the other 2 are in front of the statue, the one closer to the statue between the two, is right in front of it about 5 cm to the left, and the other one is slightly further away from the statue and much more to the left. They seem to make some kind of pattern, the one behind being connected to the statue directly and the one right in front of it too, only the one that's further away is connected to the next golden plate instead of the statue directly. As you inspect the closest golden plate to you, you see something engraved right in the middle of it, something is written there: ??????? ?????? ?? ????????. You go to check the other plates as well to see if there's anything written on them as well, and the moment you clean the dust away from the next plate you see there is something written on it too: ????? ?????? ?? ????????, last you check the plate behind the statue, and on this one it's engraved: ???????. What could it mean you wonder, maybe it means something..."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==4)
+        {
+            cout<<"'Who cares about strange statues or golden plates, there has to be something better in this place' you thought to yourself as you wondered, step by step, into the darkness. Strangely, you barely went 5 steps into that soul-consuming darkness and already hit a wall, with your face, hard! As you're falling on your ass you notice a strange light flashing around you, like a firefly with super-speed, like 'Flashy Gonzales' carrying a torch, like a laser beam fired at you by a Hurricanetrooper, you get the idea. As you open your eyes and look in front of you, there's a giant door with 5 slots in it, one after another, arranged horizontally, and all around you there are some stone cubes with letters engraved on them, they seem to fit perfectly into the sockets on the door. Ah! and there's light now, no idea where it is coming from but who cares, you can see. Maybe your head is a light bulb and your butt is the switch..."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==5)
+        {
+            Swamp();
+        }
+    }
 
+    else if(statue==1 && plates==0)
+    {
+        string options="Options:\n1.Touch statue again.\n2.Check the strange drawings on the floor that connect the statue with the golden plates.\n3.Investigate the golden plates, hopefully they are indeed made of gold and you can get some money.\n4.Keep roaming around, maybe thereâ€™s something youâ€™re not seeing, or maybe there isnâ€™t, but you canâ€™t be sure, can you?\n5.Leave Temple";
+        int choice=trychoice(5,options);
 
+        if(choice==1)
+        {
+            cout<<"This time when you approach the pedestal you donâ€™t feel that warming light all over your body, just a little coming from the giant ball of fire above, but nevertheless, you put your hand on it and find yourself back to that field."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==2)
+        {
+            cout<<"You get down and put your face against the floor, looking how the line, that you have your face on, stretches like a road, connecting the plate behind you to the statue that's right in front of you. Besides the strange pattern the drawings have, there's nothing special to them, it looks like some yellow paint with a lot of layers of dust on top."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==3)
+        {
+            cout<<"There are 3 golden plates around the statue, each of them inside their own yellow circle, one of them is behind the statue, slightly to the right, the other 2 are in front of the statue, the one closer to the statue between the two, is right in front of it about 5 cm to the left, and the other one is slightly further away from the statue and much more to the left. They seem to make some kind of pattern, the one behind being connected to the statue directly and the one right in front of it too, only the one that's further away is connected to the next golden plate instead of the statue directly. As you inspect the closest golden plate to you, you see something engraved right in the middle of it, something is written there: ??????? ?????? ?? ????????. You go to check the other plates as well to see if there's anything written on them as well, and the moment you clean the dust away from the next plate you see there is something written on it too: ????? ?????? ?? ????????, last you check the plate behind the statue, and on this one it's engraved: ???????. What could it mean you wonder, maybe it means something..."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==4)
+        {
+            cout<<"'Who cares about strange statues or golden plates, there has to be something better in this place' you thought to yourself as you wondered, step by step, into the darkness. Strangely, you barely went 5 steps into that soul-consuming darkness and already hit a wall, with your face, hard! As you're falling on your ass you notice a strange light flashing around you, like a firefly with super-speed, like 'Flashy Gonzales' carrying a torch, like a laser beam fired at you by a Hurricanetrooper, you get the idea. As you open your eyes and look in front of you, there's a giant door with 5 slots in it, one after another, arranged horizontally, and all around you there are some stone cubes with letters engraved on them, they seem to fit perfectly into the sockets on the door. Ah! and there's light now, no idea where it is coming from but who cares, you can see. Maybe your head is a light bulb and your butt is the switch..."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==5)
+        {
+            Swamp();
+        }
+    }
 
+    else if(statue==0 && plates==1)
+    {
+        string options="Options:\n1.Investigate Statue.\n2.Check the strange drawings on the floor that connect the statue with the golden plates.\n3.Keep roaming around, maybe thereâ€™s something youâ€™re not seeing, or maybe there isnâ€™t, but you canâ€™t be sure, can you?\n4.Leave Temple";
+        int choice=trychoice(4,options);
+
+        if(choice==1)
+        {
+            cout<<"As you approach the statue you start to feel a warmth, like the sun is shining upon your skin, which seems a little strange since youâ€™re wearing clothes and it feels like the sun is warming you everywhere, and I mean everywhere, apart from the fact that you are in a dark room, inside a temple, made of stone and there is no sunlightâ€¦ Even though you feel like youâ€™re going crazy you make it to the statue and put your hand on itâ€™s pedestal, as your hand touches the pedestal you feel bombarded with sunlight,  and the grass tickling your bare feet, you find yourself naked in that strange place, with your hand on the bark of a tree. You close your eyes and take your hand off of the tree, as you open them you notice that you are back in the temple, but now there is a giant ball of fire right above the statueâ€™s head that lights the whole room. You take some steps back and look at the statue, which seems to be praising the sun, standing tall on two feet, with itâ€™s both arms raised at a 45 degree angle of itâ€™s head, with a giant ball of fire between itâ€™s arms, right above itâ€™s head."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==2)
+        {
+            cout<<"You get down next to one of the lines and extend your arm to touch it, you're lost in thought as you gaze your sight upon the golden line, the way it glows makes it seem like it's alive, like the fluctuations of it's glow is it's breathing, but you lose all this train of thoughts the moment you lay your hand on the line because it feels like you've just touched the sun, and no, i do not mean it as some profound and divine experience, i mean it as in you've just burned your fingers in such a manner that you can see the bones surounded by your black, burnt flesh. You quickly withdraw your hand and get up, you're bat shit scared you just lost three of your fingers and it hurts like hell, what the hell is wrong with whoever made this temple you wonder, why the obsesion with fire and gold? why couldn't they just put their valuables in a nice chest in a dark cave like a normal person? Why all these puzzles, what do the developers of the game think you are, a 4 years old with too much time in your hands?"<<endl;
+            RuinedTemple();
+        }
+        else if(choice==3)
+        {
+            cout<<"'Who cares about strange statues or golden plates, there has to be somethiong better in this place' you thought to yourself as you wondered, step by step, into the darkness. Strangely, you barely went 5 steps into that soul-consuming darkness and already hit a wall, with your face, hard! As you're falling on your ass you notice a strange light flashing around you, like a firefly with super-speed, like 'Flashy Gonzales' carrying a torch, like a laser beam fired at you by a Hurricanetrooper, you get the idea. As you open your eyes and look in front of you, there's a giant door with 5 slots in it, one after another, arranged horizontally, and all around you there are some stone cubes with letters engraved on them, they seem to fit perfectly into the sockets on the door. Ah! and there's light now, no idea where it is coming from but who cares, you can see. Maybe your head is a light bulb and your butt is the switch..."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==4)
+        {
+            Swamp();
+        }
+    }
+
+    else if(statue==1 && plates==1)
+    {
+        string options="Options:\n1.Touch statue again.\n2.Check the strange drawings on the floor that connect the statue with the golden plates.\n3.Keep roaming around, maybe thereâ€™s something youâ€™re not seeing, or maybe there isnâ€™t, but you canâ€™t be sure, can you?\n4.Leave Temple";
+        int choice=trychoice(4,options);
+
+        if(choice==1)
+        {
+            cout<<"This time when you approach the pedestal you donâ€™t feel that warming light all over your body, just a little coming from the giant ball of fire above, but nevertheless, you put your hand on it and find yourself back to that field."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==2)
+        {
+            cout<<"You get down next to one of the lines and extend your arm to touch it, you're lost in thought as you gaze your sight upon the golden line, the way it glows makes it seem like it's alive, like the fluctuations of it's glow is it's breathing, but you lose all this train of thoughts the moment you lay your hand on the line because it feels like you've just touched the sun, and no, i do not mean it as some profound and divine experience, i mean it as in you've just burned your fingers in such a manner that you can see the bones surrounded by your black, burnt flesh. You quickly withdraw your hand and get up, you're bat shit scared you just lost three of your fingers and it hurts like hell, what the hell is wrong with whoever made this temple you wonder, why the obsession with fire and gold? why couldn't they just put their valuables in a nice chest in a dark cave like a normal person? Why all these puzzles, what do the developers of the game think you are, a 4 years old with too much time in your hands?"<<endl;
+            RuinedTemple();
+        }
+        else if(choice==3)
+        {
+            cout<<"'Who cares about strange statues or golden plates, there has to be something better in this place' you thought to yourself as you wondered, step by step, into the darkness. Strangely, you barely went 5 steps into that soul-consuming darkness and already hit a wall, with your face, hard! As you're falling on your ass you notice a strange light flashing around you, like a firefly with super-speed, like 'Flashy Gonzales' carrying a torch, like a laser beam fired at you by a Hurricanetrooper, you get the idea. As you open your eyes and look in front of you, there's a giant door with 5 slots in it, one after another, arranged horizontally, and all around you there are some stone cubes with letters engraved on them, they seem to fit perfectly into the sockets on the door. Ah! and there's light now, no idea where it is coming from but who cares, you can see. Maybe your head is a light bulb and your butt is the switch..."<<endl;
+            RuinedTemple();
+        }
+        else if(choice==4)
+        {
+            Swamp();
+        }
+    }
+}
+int main()
+{
+    Swamp();
+    return 0;
 }
